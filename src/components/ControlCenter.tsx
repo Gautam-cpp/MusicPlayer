@@ -1,7 +1,8 @@
 import React from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import TrackPlayer, { State, usePlaybackState } from 'react-native-track-player';
-import Icon from 'react-native-vector-icons/AntDesign';
+// import Icon from 'react-native-vector-icons/AntDesign';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 function ControlCenter() {
   const playback = usePlaybackState(); 
@@ -30,7 +31,7 @@ function ControlCenter() {
   return (
     <View style={styles.container}>
       <Pressable onPress={skipToPrevious} style={styles.controlButton}>
-        <Icon name="stepbackward" size={40} color="#fff" />
+        <AntDesign name="stepbackward" size={40} color="#fff" />
       </Pressable>
 
       <Pressable
@@ -41,7 +42,7 @@ function ControlCenter() {
         }}
         style={styles.playButton}
       >
-        <Icon
+        <AntDesign
           name={currentState === State.Playing ? 'pause' : 'play'}
           size={75}
           color="#1DB954" 
@@ -49,7 +50,7 @@ function ControlCenter() {
       </Pressable>
 
       <Pressable onPress={skipToNext} style={styles.controlButton}>
-        <Icon name="stepforward" size={40} color="#fff" />
+        <AntDesign name="stepforward" size={40} color="#fff" />
       </Pressable>
     </View>
   );
