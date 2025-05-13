@@ -1,10 +1,13 @@
 # MusicPlayer App 
 
-A simple React Native music player app using `react-native-vector-icons` and `react-native-track-player`.
+A simple React Native music player app using packages such as `react-native-community/slider` and `react-native-track-player`.
 
-# Sample Images
-
-![sampleImageOne](/images/one.jpg) ![sampleImageTwo](/images/two.jpg)
+## Sample Images
+<p float="left">
+  <img src="/images/one.jpg" width="30%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="/images/two.jpg" width="30%" />
+</p>
 
 ## Installation
 
